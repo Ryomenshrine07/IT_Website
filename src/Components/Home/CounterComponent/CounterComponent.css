@@ -1,0 +1,59 @@
+.mainCounterBox
+{
+    /* border: 2px solid black; */
+    /* height: 40vh; */
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-evenly;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    opacity: 0;
+    transform: translateX(-50%);
+    transition: all 1s ease-out;
+    margin-top: 2em;
+    /* margin-top: 0.5em; */
+}
+.mainCounterBox.visible
+{
+    opacity: 1;
+    transform: translateX(0%);
+}
+.counterDivHolder
+{
+    /* border: 2px solid black; */
+    display: flex;
+    flex-wrap: wrap;
+    background: url("https://wordpress.onertheme.com/gratech/wp-content/uploads/2024/04/counnter-bg-shape.png");
+    background-color: #003080;
+    background-repeat: no-repeat;
+    background-position: right;
+}
+.counterDiv
+{
+    /* border: 2px solid black; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 200px;
+    min-height: 200px;
+    height: fit-content;
+    margin: 1em;
+    padding: 1em;
+}
+.counterDiv h3
+{
+    color: white;
+    font-size: 2em;
+}
+.counterDiv h4
+{
+    color: white;
+
+}
+.countImgBox
+{
+    /* border: 2px solid black; */
+    width: fit-content;
+    height: fit-content;
+    margin: 1em;
+}

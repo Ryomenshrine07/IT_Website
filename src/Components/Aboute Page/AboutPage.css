@@ -1,0 +1,75 @@
+.AboutPage
+{
+    overflow: hidden;
+}
+.aboutStartImgAndHead
+{
+    overflow: hidden;
+    position: relative;
+    z-index: -1;
+    opacity: 0;
+    transform: translateY(50%);
+    transition: all 1s ease-out;
+}
+.aboutStartImgAndHead.visible
+{
+    opacity: 1;
+    transform: translateY(0%);
+    transition: all 1s ease-out;
+}
+.aboutStartImgAndHead img
+{
+    filter: brightness(50%);
+}
+.aboutStartInfo
+{
+    position: absolute;
+    top: 10em;
+    left: 10em;
+    color: white;
+}
+.aboutStartInfo h1
+{
+    font-size: 3em;
+}
+.aboutStartInfo button
+{
+    background: none;
+    border: none;
+    color: white;
+    font-size: 1em;
+    cursor: pointer;
+}
+.homeNavigation
+{
+    display: flex;
+    align-items: center;
+}
+.homeNavigation h4
+{
+    margin: 1em;
+}
+.staticImage
+{
+    position: absolute;
+    top: 13.7em;
+    z-index: 2;
+}
+.staticImage img
+{
+    filter: brightness(100%);
+}
+.dynamicImage
+{
+    position: absolute;
+    top: 10em;
+    animation: moveUp 2s linear infinite alternate;
+}
+.dynamicImage img
+{
+    filter: brightness(100%);
+}
+@keyframes moveUP {
+    0%{transform: translateY(0);}
+    100%{transform: translateY(-10%);}
+}

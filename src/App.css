@@ -1,0 +1,46 @@
+/* App.css */
+
+/* CSS Reset */
+/* * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body, html {
+    height: 100%;
+  }
+  
+  /* Custom styles */
+  .App {
+    width:auto;
+    /* border: 2px solid black; */
+  }
+  
+   */
+  .cursor {
+    display: block;
+  }
+  
+  /* Hide the default scrollbar */
+  ::-webkit-scrollbar {
+    width: 12px;
+  }
+  
+  /* Background of the scrollbar */
+  ::-webkit-scrollbar-track {
+    background: #f1f1f1;
+    border-radius: 10px;
+  }
+  
+  /* Handle of the scrollbar */
+  ::-webkit-scrollbar-thumb {
+    background: #888;
+    border-radius: 10px;
+  }
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: #555;
+  }
+  

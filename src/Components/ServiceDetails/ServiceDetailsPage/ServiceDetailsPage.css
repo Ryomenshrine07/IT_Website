@@ -1,0 +1,158 @@
+.ServiceDetailsPage
+{
+    /* border: 2px solid black; */
+    display: flex;
+    justify-content: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    overflow: hidden;
+}
+.mainServiceContainer
+{
+    /* border: 2px solid black; */
+    display: flex;
+    flex-wrap: wrap;
+    width: 85%;
+}
+.leftServiceBox
+{
+    /* border: 2px solid yellow; */
+    width: 70%;
+    overflow: hidden;
+}
+.rightServiceBox
+{
+    /* border: 2px solid red; */
+    width: 30%;
+    overflow: hidden;
+}
+.upperImage
+{
+    margin: 3.5em;
+    opacity: 0;
+    transform: translateX(-50%);
+    transition: all 1s ease-out;
+}
+.upperImage.visible
+{
+    opacity: 1;
+    transform: translateX(0%);
+    transition: all 1s ease-out;
+}
+.serviceDetailHead
+{
+    padding: 1em;
+    opacity: 0;
+    transform: translateX(-50%);
+    transition: all 1s ease-out;
+}
+.serviceDetailHead.visible
+{
+    opacity: 1;
+    transform: translateX(0%);
+    transition: all 1s ease-out;
+}
+.serviceDetailHead p
+{
+    font-size: 1.3em;
+}
+.benifitOfServiceMain
+{
+    display: flex;
+    flex-wrap: wrap;
+    overflow: hidden;
+}
+.beneBox
+{
+    padding: 0.5em;
+}
+.benefits
+{
+    opacity: 0;
+    transform: translateX(-20%);
+    transition: all 1s ease-out;
+}
+.benefits.visible
+{
+    opacity: 1;
+    transform: translateX(0%);
+    transition: all 1s ease-out;
+}
+.benefitImage
+{
+    opacity: 0;
+    transform: translateX(20%);
+    transition: all 1s ease-out;
+}
+.benefitImage.visible
+{
+    opacity: 1;
+    transform: translateX(0%);
+    transition: all 1s ease-out;
+}
+.rightServiceBox
+{
+    /* border: 2px solid black; */
+    height: fit-content;
+    background-color: #a9bcec03;
+}
+.rightServiceBox h2
+{
+    text-align: center;
+}
+.allServicesMain
+{
+    background-color: rgba(191, 224, 237, 0.084);
+    /* border: 2px solid black; */
+    opacity: 0;
+    transform: translateX(50%);
+    transition: all 1s ease-out;
+}
+.allServicesMain.visible
+{
+    opacity: 1;
+    transform: translateX(0%);
+    transition: all 1s ease-out;
+}
+
+.allServicesDiv
+{
+    /* border: 2px solid black; */
+}
+.allServContent
+{
+    display: flex;
+    justify-content: space-between;
+    padding: 0.5em;
+    font-size: 1.3em;
+    align-items: center;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    margin: 1em;
+    transition: all 0.5s ease-in-out;
+}
+.allServContent:hover
+{
+    transition: all 0.5s ease-in-out;
+    background: #3c72fc;
+    color: white;
+}
+.allServContent:hover .icon
+{
+    transform: translateX(30%);
+}
+.openHoursMain
+{
+    margin-top: 3em;
+    opacity: 0;
+    transform: translateX(50%);
+    transition: all 1s ease-out;
+}
+.openHoursMain.visible
+{
+    opacity: 1;
+    transform: translateX(0%);
+    transition: all 1s ease-out;   
+}
+.openHoursMain p
+{
+    font-size: 0.8em;
+}

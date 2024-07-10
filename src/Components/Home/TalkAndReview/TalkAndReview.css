@@ -1,0 +1,211 @@
+.talkAndReviewMain
+{
+    /* border: 2px solid black; */
+    width: 100vw;
+    height: 100vh;
+    background: url("https://wordpress.onertheme.com/gratech/wp-content/uploads/2024/04/testimonial-bg.png");
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 1em;   
+    overflow: hidden;
+    opacity: 1; 
+}
+.talkAndReviewMain.visible
+{
+    opacity: 1;
+    transform: translateY(0);
+    transition: all 1s ease-in-out;
+}
+.talkAndReviewContent
+{
+    width: 80%;
+    /* border: 2px solid brown; */
+    display: flex;
+    flex-wrap: wrap;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    /* min-width: 600px; */
+}
+.talkAndReviewContent form
+{
+    /* border: 2px solid black; */
+    /* height: 100%; */
+    /* width: 49%; */
+    /* min-width: 550px; */
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    /* align-items: center; */
+    background: linear-gradient(90deg, #3c72fc -10.59%, #00060c 300.59%);
+    opacity: 0;
+    transform: translateX(-50%);
+    transition: all 1.5s ease-in-out;
+
+}
+.talkAndReviewContent form.visible
+{
+    opacity: 1;
+    transform: translateX(0);
+    transition: all 1.5s ease-in-out;
+}
+.talkAndReviewContent form button
+{
+    margin: 0.8em;
+    color: white;
+    background-color: black;
+    border: none;
+    height: 3em;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.reviewContent
+{
+    /* border: 2px solid black; */
+    width: 50%;
+    min-width: 600px;
+    height: 100%;
+    opacity: 0;
+    transform: translateX(50%);
+    transition: all 1.5s ease-in-out;
+}
+.reviewContent.visible
+{
+    opacity: 1;
+    transform: translateX(0);
+    transition: all 1.5s ease-in-out;
+}
+.formHeadAndIcon
+{
+    display: flex;
+    align-items: center;
+    color: white;
+    height: 1.8em;
+    margin-left: 1em;
+}
+.formHead
+{
+    color: white;
+    margin-left: 1em;
+}
+.formInputs
+{
+    display: flex;
+    flex-wrap: wrap;
+}
+.inputText
+{
+    margin: 0.7em;
+}
+.inputText label
+{
+    font-size: 1.2em;
+    color: white;
+    display: block;
+    margin-bottom: 1em;
+}
+.formTextarea
+{
+    margin: 0.8em;
+}
+.formTextarea label
+{
+    font-size: 1.2em;
+    color: white;
+    display: block;
+    margin-bottom: 1em;
+}
+.formTextarea textarea
+{
+    width: 42.6em;
+    height: 10em;
+    border: none;
+    text-decoration: none;
+}
+.inputText input
+{
+    height: 4em;
+    width: 20em;
+    border: none;
+}
+.reviewContent
+{
+    height: inherit;
+}
+.headWithIcon
+{
+    display: flex;
+    height: 2em;
+    align-items: center;
+    color: #3c72fc;
+    margin-left: 1em;
+}
+.headReview
+{
+    /* border: 2px solid black; */
+    text-align: center;
+}
+.cardSlider
+{
+    height: 100%;
+    margin-top: 5em;
+    margin-left: 1em;
+}
+.cardSliderCard
+{
+    /* border: 2px solid black; */
+    height: 100%;
+}
+.cardUpper
+{
+    display: flex;
+    /* border: 2px solid black; */
+    justify-content: space-between;
+}
+.photoDesc
+{
+    margin-left: 1em;
+}
+.cardLower
+{
+    font-size: 1.1em;
+}
+.cardUpDesc
+{
+    display: flex;
+}
+.cardStarDiv
+{
+    display: flex;
+    align-items: center;
+    /* justify-content: center; */
+}
+.coloredStar
+{
+    color: #3c72fc;
+}
+.noteDivMain
+{
+    display: flex;
+    margin-right: 1em;
+}
+
+.noteDiv
+{
+    /* border: 2px solid black; */
+    height: 2em;
+    width: 1em;
+    margin: 0.1em;
+    margin-top: 0;
+    background: #3c72fc;
+}
+
+@media (max-width: 576px) {
+    .talkAndReviewContent
+    {
+        width: 100vw;
+    }
+    .reviewContent
+    {
+        background-color: white;
+    }
+}

@@ -1,0 +1,74 @@
+.serviceCardMain
+{
+    /* border: 2px solid black; */
+    border-radius: 3em 0em 0em 0em;
+    width: 370px;
+    overflow: hidden;
+    position: relative;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 1.2em;
+    box-shadow: 0px 4px 25px 0px #0000000f;
+    min-width: 370px;
+    opacity: 0;
+    transform: translateY(30%);
+    transition: all 1s ease-out;
+}
+.serviceCardMain.visible
+{
+    opacity: 1;
+    transform: translateY(0%);
+    transition: all 1s ease-out;
+}
+.cardText h2
+{
+    height: 0.1em;
+    font-size: 2em;
+}
+.cardText
+{
+    padding: 1em;
+}
+.serviceCardMain button
+{
+    font-size: 1.1em;
+    background: none;
+    border: none;
+    margin-top: 1em;
+    margin-left: 1em;
+    margin-bottom: 1em;
+    transition: all 0.5s ease-in-out;
+}
+.serviceCardIcon
+{
+    background: linear-gradient(90deg, #3c72fc -10.59%, #00060c 300.59%);
+    width: fit-content;
+    position: absolute;
+    top: 14em;
+    left: 2em;
+    transition: all 1s ease-in-out;
+}
+.serviceCardIcon img
+{
+    width: 2em;
+    padding: 1em;
+}
+.serviceCardMain:hover span
+{
+    transition: all 0.5s ease-in-out;
+    color: #3c72fc;
+}
+.serviceCardMain:hover .serviceCardIcon
+{
+    transition: all 1s ease-in-out;
+    transform: rotateY(360deg);
+}
+.serviceCardMain button span
+{
+    padding: 0.5em;
+}
+.serviceCardMain:hover .serviceBtn
+{
+    color: #3c72fc;
+    transform: translateX(30%);
+    transition: transform 0.3s ease-in-out;
+}

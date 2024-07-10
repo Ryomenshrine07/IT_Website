@@ -1,0 +1,152 @@
+.workProcess
+{
+    /* border: 2px solid black; */
+    /* height: 95vh; */
+    margin-top: 1.5em;
+    display: flex;
+    /* align-items: center; */
+    justify-content: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    opacity: 0;
+    transform: translateY(50%);
+    transition: opacity 1s ease-in-out, transform 1s ease-in-out;
+    overflow: hidden;
+}
+.workProcess.visible
+{
+    opacity: 1;
+    transform: translateY(0);
+}
+.workProcessContent
+{
+    /* border: 2px solid black; */
+    width: 80%;
+    /* height: 100%; */
+}
+.headWithIconWork
+{
+    display: flex;
+    align-items: center;
+    color: #3C72FC;
+    justify-content: center;
+    height: fit-content;
+    opacity: 0;
+    transform: translateX(-50%);
+    transition: opacity 1s ease-in-out, transform 1s ease-in-out;
+}
+.headWithIconWork.visible
+{
+    opacity: 1;
+    transform: translateX(0);
+}
+.headWork
+{
+    display: flex;
+    align-items: center;
+    font-size: 1.5em;
+    justify-content: center;
+    height: fit-content;
+    opacity: 0;
+    transform: translateX(50%);
+    transition: opacity 1s ease-in-out, transform 1s ease-in-out;
+}
+.headWork.visible
+{
+    opacity: 1;
+    transform: translateX(0);
+}
+.leftCircle
+{
+    opacity: 0;
+    transform: translateX(-80%);
+    transition: opacity 1s ease-in-out, transform 1s ease-in-out;
+}
+.leftCircle.visible
+{
+    opacity: 1;
+    transform: translateX(0);
+}
+.RightCircle
+{
+    opacity: 0;
+    transform: translateX(80%);
+    transition: opacity 1s ease-in-out, transform 1s ease-in-out;
+}
+.RightCircle.visible
+{
+    opacity: 1;
+    transform: translateX(0);
+}
+.circleBoxMain
+{
+    /* border: 2px solid black; */
+    height: inherit;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.circleBox
+{
+    /* border: 2px solid black; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    max-width: 300px;
+    text-align: center;
+}
+.outerDottedCircle {
+    position: relative; /* Ensure the position is relative for correct positioning of pseudo-element */
+    margin: 1em;
+    padding: 1em;
+}
+.imageBox
+{
+    margin: 1em;
+    animation: moveUpDown 3s linear infinite alternate;
+}
+
+@keyframes moveUpDown {
+    0%{transform: translateY(0);}
+    100%{transform: translateY(-50%);}
+}
+.outerDottedCircle::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    border: 3px dotted #3C72FC;
+    border-radius: 100%;
+    animation: rotate 10s linear infinite;
+    z-index: -1; /* Ensure the pseudo-element is behind the content */
+}
+@keyframes rotate {
+    0%{transform: rotate(0);}
+    100%{transform: rotate(360deg);}
+}
+.numberCircle
+{
+    background-color: #3C72FC;
+    color: white;
+    border-radius: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: fit-content;
+    width: fit-content;
+    padding: 1em;
+    position: absolute;
+}
+@media (max-width: 1423px) {
+    .imageBox
+    {
+        display: none;
+    }
+    .circleBox
+    {
+        margin: 1em;
+    }
+}

@@ -1,0 +1,195 @@
+.mainAbout
+{
+    /* border: 2px solid black; */
+    height: fit-content;
+    margin-top: 5%;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+.aboutmainContainer
+{
+    height: 100%;
+    width: fit-content;
+    
+    /* border: 2px solid black; */
+    display: flex;
+    flex-wrap: wrap;
+    overflow: hidden;
+}
+.imageContainer
+{
+    width: 45.5%;
+    /* border: 2px solid black; */
+    min-width: 500px;
+    display: flex;
+    flex-wrap: wrap;
+    opacity: 0;
+    transform: translateX(-80%);
+    transition: all 1s ease-out;
+}
+.imageContainer.visible
+{
+    opacity: 1;
+    transform: translateX(0);
+}
+.imageContainer img
+{
+    width: 100%;
+}
+.contentContainer
+{
+    /* border: 2px solid black; */
+    width: 50%;
+    min-width: 500px;
+    margin-left: 2%;
+    opacity: 0;
+    transform: translateX(80%);
+    transition: all 1s ease-out;
+}
+.contentContainer.visible
+{
+    opacity: 1;
+    transform: translateX(0);
+}
+.aboutIconHead
+{
+    /* border: 2px solid black; */
+    color: #3C72FC;
+
+}
+.aboutIcon
+{
+    animation: rotate 1.5s linear infinite;
+}
+@keyframes rotate {
+    0%{transform: rotate(0deg);}
+    100%{transform: rotate(360deg);}
+    
+}
+.contentHeading
+{
+    /* border: 2px solid black; */
+    font-size: 1.2em;
+}
+.contentDescription
+{
+    /* border: 2px solid black; */
+    font-size: 1.5rem;
+}
+.servicesDemo
+{
+    /* border: 2px solid black; */
+    display: flex;
+    width: 100%;
+    /* height: 100%; */
+}
+.serviceDemoBox
+{
+    /* border: 2px solid black; */
+    width: 50%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.serviceTextBox
+{
+    margin-left: 1rem;
+}
+.leaderSection
+{
+    /* border: 2px solid black; */
+    display: flex;
+}
+.icon
+{
+  padding-left: 8px;
+  position: relative;
+}
+.leaderSection button:hover .icon {
+  transform: translateX(30%);
+  transition: transform 0.3s ease-in-out; /* Optional for smooth transition */
+}
+.leaderSection button
+{
+    background: linear-gradient(90deg, #3c72fc -10.59%, #00060c 300.59%);
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    text-align: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: larger;
+    position: relative; /* Ensure positioning context for the pseudo-element */
+    overflow: hidden;
+}
+.leaderSection button::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: black; /* New background color */
+    transform: scaleX(0);
+    color: white;
+    transform-origin: left;
+    transition: transform 0.5s ease;
+  }
+  
+  .leaderSection button:hover::before {
+    transform: scaleX(1);
+  }
+  
+  .leaderSection button span {
+    position: relative;
+    z-index: 1;
+   }
+  .leaderSection button:hover.icon
+  {
+    transform: translateX(1%);
+  }
+/* 
+  @media (min-width: 576px) 
+   { 
+       .mainAbout
+       {
+           width: 230%;
+           border: 2px solid black;
+           margin-left: 2em;
+       }
+       .imageContainer img
+       {
+            width: 200%;
+       }
+   }
+   
+   @media (max-width: 768px) 
+   {
+       .Navbar{
+           min-width: 768px;
+       }
+   }
+   
+   @media (max-width: 992px) 
+   {
+       .Navbar{
+           min-width: 992px;
+       }
+   }
+   
+   @media (max-width: 1200px) {
+       .Navbar
+       {
+           min-width: 1200px;
+       }
+   }
+   
+   @media (max-width: 1400px) {
+       .Navbar
+       {
+           min-width: 1400px;
+       }
+   } */

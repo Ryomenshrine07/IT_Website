@@ -1,0 +1,196 @@
+.BlogAndNewsMain
+{
+    /* border: 2px solid black; */
+    /* height: 100vh; */
+    margin-top: 6em;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    overflow: hidden;
+    opacity: 0;
+    transform: translateY(10%);
+    transition: opacity 1s ease-in-out, transform 1s ease-in-out;
+}
+.BlogAndNewsMain.visible
+{
+    opacity: 1;
+    transform: translateY(0%);
+    transition: opacity 1s ease-in-out, transform 1s ease-in-out;
+}
+.headWithIconBlog
+{
+    /* border: 2px solid black; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #3c72fc;
+    font-size: 1.2em;
+    opacity: 0;
+    transform: translateX(-80%);
+    transition: opacity 1s ease-in-out, transform 1s ease-in-out;
+}
+.headWithIconBlog.visible
+{
+    opacity: 1;
+    transform: translateX(0%);
+    transition: opacity 1s ease-in-out, transform 1s ease-in-out;
+}
+.headBlog
+{
+    font-size: 1.5em;
+    text-align: center;
+    opacity: 0;
+    transform: translateX(80%);
+    transition: opacity 1s ease-in-out, transform 1s ease-in-out;
+}
+.headBlog.visible
+{
+    opacity: 1;
+    transform: translateX(0%);
+    transition: opacity 1s ease-in-out, transform 1s ease-in-out;
+}
+.blogCardDiv
+{
+    /* border: 2px solid black; */
+    /* height: 100%; */
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.blogCard
+{
+    /* border: 2px solid red; */
+    height: max-content;
+    min-width: max-content;
+    box-shadow: 0px 4px 25px 0px #0000000f;
+    margin: 1em;
+}
+.leftCard
+{
+    opacity: 0;
+    transform: translateX(-50%);
+    transition: opacity 1s ease-in-out, transform 1s ease-in-out;
+}
+.leftCard.visible
+{
+    opacity: 1;
+    transform: translateX(0%);
+    transition: opacity 1s ease-in-out, transform 1s ease-in-out;
+}
+.rightCard
+{
+    opacity: 0;
+    transform: translateX(50%);
+    transition: opacity 1s ease-in-out, transform 1s ease-in-out;
+}
+.rightCard.visible
+{
+    opacity: 1;
+    transform: translateX(0%);
+    transition: opacity 1s ease-in-out, transform 1s ease-in-out;
+}
+.imageAndNumBox
+{
+    /* border: 2px solid black; */
+    height: fit-content;
+    position: relative;
+    overflow: hidden;
+}
+.imageAndNumBox img {
+    transition: transform 0.3s ease-in-out, filter 0.3s ease-in-out;
+}
+.numBox
+{
+    /* border: 2px solid black; */
+    /* padding: 1em; */
+    width: 70px;
+    height: 70px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(90deg, #3c72fc -10.59%, #00060c 300.59%);
+    color:white;
+    position: absolute;
+    top: 0.5em;
+    left: 0.5em;
+}
+.numBox h2
+{
+    height: 0em;
+}
+.ByAndComments
+{
+    /* border: 2px solid black; */
+    display: flex;
+    width: 100%;
+    justify-content: space-evenly;
+    color: #3c72fc;
+}
+.ByDiv
+{
+    display: flex;
+    align-items: center;
+}
+.commentDiv
+{
+    display: flex;
+    align-items: center;
+}
+.ByIcon
+{
+    height: 1.5em;
+    width: 1.5em;
+    padding: 0.5em;
+}
+.blogCard hr
+{
+    width: 80%;
+}
+.blogCardHead
+{
+    /* border: 2px solid black;  */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+.blogCardHeadText
+{
+    width: 300px;
+    transition: all 0.5s ease-in-out;
+}
+.blogCard button
+{
+    font-size: 1.1em;
+    background: none;
+    border: none;
+    margin-top: 1em;
+    margin-left: 1em;
+    transition: all 0.5s ease-in-out;
+    margin-bottom: 2em;
+}
+.blogCard:hover
+{
+    color: #3c72fc;
+}
+.blogCard:hover span
+{
+    transition: all 0.5s ease-in-out;
+    color: #3c72fc;
+}
+.blogCard button span
+{
+    padding: 0.5em;
+}
+.blogCard:hover .blogCardBtn
+{
+    color: #3c72fc;
+    transform: translateX(30%);
+    transition: transform 0.3s ease-in-out;
+}
+.blogCard:hover .imageAndNumBox img
+{
+    transition: transform 0.3s ease-in-out;
+    transform: rotate(2deg) scale(1.1);
+    filter: brightness(80%);
+}
