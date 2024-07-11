@@ -157,3 +157,17 @@
     font-size: 1.3em;
     margin: 1em;
 }
+@media (min-width: 768px) {
+    .devicesBoxMain
+    {
+        justify-content: center;
+    }
+}
+@media (min-width: 1400px) {
+    .devicesBoxMain
+    {
+        width: 100%;
+        flex-wrap: nowrap;
+        /* border: 2px solid white; */
+    }
+}

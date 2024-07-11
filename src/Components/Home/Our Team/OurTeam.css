@@ -100,3 +100,14 @@
 .card:hover::before {
   height: 100%;
 }
+
+@media (min-width:576px) {
+  .Mini-div h3
+  {
+    height: 1em;
+  }
+  .Mini-div p
+  {
+    height: 1em;
+  }
+}

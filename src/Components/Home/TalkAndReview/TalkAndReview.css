@@ -29,10 +29,6 @@
 }
 .talkAndReviewContent form
 {
-    /* border: 2px solid black; */
-    /* height: 100%; */
-    /* width: 49%; */
-    /* min-width: 550px; */
     display: flex;
     flex-wrap: wrap;
     flex-direction: column;
@@ -199,13 +195,20 @@
     background: #3c72fc;
 }
 
-@media (max-width: 576px) {
+@media (min-width: 576px) {
     .talkAndReviewContent
     {
-        width: 100vw;
+        /* width: 100vw; */
+        justify-content: center;
     }
     .reviewContent
     {
         background-color: white;
+    }
+}
+@media (min-width: 1200px) {
+    .talkAndReviewContent
+    {
+        flex-wrap: nowrap;
     }
 }

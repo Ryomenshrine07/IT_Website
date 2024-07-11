@@ -3,6 +3,7 @@
     /* border: 2px solid black; */
     /* height: 95vh; */
     margin-top: 1.5em;
+    margin-bottom: 1.5em;
     display: flex;
     /* align-items: center; */
     justify-content: center;
@@ -21,7 +22,7 @@
 {
     /* border: 2px solid black; */
     width: 80%;
-    /* height: 100%; */
+    height: 100%;
 }
 .headWithIconWork
 {
@@ -140,7 +141,7 @@
     padding: 1em;
     position: absolute;
 }
-@media (max-width: 1423px) {
+@media (max-width: 992px) {
     .imageBox
     {
         display: none;
@@ -148,5 +149,11 @@
     .circleBox
     {
         margin: 1em;
+    }
+}
+@media (min-width: 1200px) {
+    .circleBoxMain
+    {
+        flex-wrap: nowrap;
     }
 }

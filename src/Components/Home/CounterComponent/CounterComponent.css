@@ -11,6 +11,7 @@
     transform: translateX(-50%);
     transition: all 1s ease-out;
     margin-top: 2em;
+    overflow: hidden;
     /* margin-top: 0.5em; */
 }
 .mainCounterBox.visible
@@ -56,4 +57,22 @@
     width: fit-content;
     height: fit-content;
     margin: 1em;
+}
+
+@media (min-width: 576px) {
+    .counterDivHolder{
+        justify-content: center;
+    }
+}
+@media (min-width: 768px) {
+    .counterDivHolder
+    {
+        width: 90%;
+    }
+}
+@media (min-width: 992px) {
+    .counterDivHolder
+    {
+        width: 100%;
+    }
 }

@@ -22,7 +22,7 @@
 .cardText h2
 {
     height: 0.1em;
-    font-size: 2em;
+    font-size: 1.5em;
 }
 .cardText
 {
@@ -49,7 +49,7 @@
 }
 .serviceCardIcon img
 {
-    width: 2em;
+    width: 3em;
     padding: 1em;
 }
 .serviceCardMain:hover span

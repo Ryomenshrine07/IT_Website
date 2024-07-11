@@ -8,7 +8,7 @@
 .whatWeOfferDiv
 {
     /* border: 2px solid black; */
-    width: 85%;
+    /* width: 85%; */
 }
 .heading
 {
@@ -193,9 +193,9 @@
     transform: translateX(0);
   }
 
-  @media (max-width: 576px) {
-    .main {
-        width: 100%;
-        margin-top: -30em;
+  @media (min-width: 1200px) {
+    .serviceCardDiv
+    {
+      flex-wrap: nowrap;
     }
 }

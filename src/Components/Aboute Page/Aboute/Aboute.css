@@ -166,7 +166,7 @@
   transition: transform 0.3s ease-in-out; /* Optional for smooth transition */
 }
 
-@media (max-width:576px) {
+@media (min-width:576px) {
     .mainAbouteContentMain
     {
         flex-direction: column; 
@@ -196,5 +196,23 @@
     #Image4
     {
         left: 31em;
+    }
+}
+@media (min-width: 992px) {
+    .mainAbouteContentMain
+    {
+        flex-direction: row;
+        justify-content: center;
+    }
+}
+@media (min-width: 1200px) {
+    .mainAbouteContentMain
+    {
+        flex-direction: row;
+        flex-wrap: nowrap;
+    }
+    .contentDiv2
+    {
+        width: 50%;
     }
 }

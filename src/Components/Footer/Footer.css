@@ -1,14 +1,23 @@
 
   
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
   .main-div {
     padding: 20px;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     background-color: black;
     background: url("https://wordpress.onertheme.com/gratech/wp-content/themes/gratech/assets/img/footer-shadow-shape.png");
     background-color: rgba(0, 0, 0, 0.877);    
-    position: relative;
     /* width: 100vw; */
     margin-top: 2em;
+  }
+  .footerImageArea
+  {
+      position: relative;
   }
   .main-div hr
   {
@@ -125,58 +134,4 @@
     border: 0;
     border-top: 1px solid #ddd;
     margin-top: 3em;
-  }
-  .leftImages
-  {
-    position: absolute;
-  }
-  .leftStatic
-  {
-    position: absolute;
-    top: 1em;
-    /* z-index: -1; */
-  }
-  .leftDynamic
-  {
-    position: absolute;
-    animation: moveUpDown 5s linear infinite alternate;
-    /* z-index: -1; */
-  }
-  @keyframes moveUpDown {
-    0%{transform: translateY(0);}
-    100%{transform: translateY(2em);}
-  }
-  .rightImages
-  {
-    position: absolute;
-    left: 88%;
-  }
-  .rightImages img
-  {
-    width: 10em;
-  }
-  .rightStatic
-  {
-    position: absolute;
-  }
-  .rightDynamic
-  {
-    position: absolute;
-    animation: moveUp 3s linear infinite alternate;
-  }
-  @keyframes moveUp {
-    0%{transform: translateY(1);}
-    100%{transform: translateY(-6%);}
-  }
-
-  @media (min-width:576px) {
-    .leftImages
-    {
-      z-index: -1;
-    }
-    .rightImages
-    {
-      left: 70%;
-      z-index: -1;
-    }
   }

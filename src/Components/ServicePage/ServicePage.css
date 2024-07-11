@@ -18,3 +18,17 @@
     transform: translateY(0%);
     transition: all 1s ease-out;
 }
+@media (min-width: 1200px) {
+    .serviceCardBackGround
+    {
+        justify-content: center;
+    }   
+}
+
+@media (min-width: 1400px)
+{
+    .serviceCardBackGround
+    {
+        width: 100%;
+    }
+}

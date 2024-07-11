@@ -97,7 +97,7 @@
 }
 
 
-@media (max-width: 576px) 
+@media (min-width: 576px) 
 { 
     .caraousal{
         min-width: 100%;
@@ -124,28 +124,99 @@
 }
 }
 
-@media (max-width: 768px) 
+@media (min-width: 768px) 
 {
-
-}
-
-@media (max-width: 992px) 
+.contentStyle h1
 {
-    .caraousal{
-        min-width: 100%;
-    }
+    font-size: 1em;    
+    margin: 0;
+}
+.contentStyle h3
+{
+   font-size: 2.5em;
+   margin: 0;
+}
+.contentStyle p
+{
+  font-size: 2em;
+  margin: 0;
+  width: 500px;
+}
+.caraousal button
+{
+    top: 80%;
 }
 
-@media (max-width: 1200px) {
-    .caraousal
-    {
-        min-width: 100%;
-    }
 }
 
-@media (max-width: 1400px) {
-    .caraousal
-    {
-        min-width: 100%;
-    }
+@media (min-width: 992px) 
+{
+.contentStyle h1
+{
+    font-size: 1em;    
+    margin: 0;
+}
+.contentStyle h3
+{
+   font-size: 2.5em;
+   margin: 0;
+}
+.contentStyle p
+{
+  font-size: 2.5em;
+  margin: 0;
+  width: 650px;
+}
+.caraousal button
+{
+    top: 80%;
+}
+}
+
+@media (min-width: 1200px) {
+.contentStyle h1
+{
+    font-size: 2em;    
+    margin: 0;
+}
+.contentStyle h3
+{
+   font-size: 2.5em;
+   margin: 0;
+}
+.contentStyle p
+{
+  font-size: 2.9em;
+  margin: 0;
+  width: 800px;
+  margin-top: 3em;
+}
+.caraousal button
+{
+    top: 90%;
+}
+}
+
+@media (min-width: 1400px) {
+.contentStyle h1
+{
+    font-size: 2em;    
+    margin: 0;
+}
+.contentStyle h3
+{
+   font-size: 3.5em;
+   margin: 0;
+}
+.contentStyle p
+{
+  font-size: 3em;
+  margin: 0;
+  width: 1000px;
+  margin-top: 3em;
+}
+.caraousal button
+{
+    top: 80%;
+}
 } 

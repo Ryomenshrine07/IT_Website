@@ -7,7 +7,7 @@
 
 html, body {
   width:100vw;
-  /* height: 100%; */
+  height: 100%;
   margin: 0;
   padding: 0;
   border: 0; /* Remove any borders to avoid unexpected width issues */
@@ -24,7 +24,7 @@ body {
 
 /* Hide the default scrollbar */
 ::-webkit-scrollbar {
-  width: 12px;
+  display: none;
 }
 
 /* Background of the scrollbar */

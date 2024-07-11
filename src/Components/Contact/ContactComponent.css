@@ -196,3 +196,17 @@
     transition: transform 0.3s ease-in-out; /* Optional for smooth transition */
   }
 
+@media (min-width:576px) and (max-width:768px){
+    .container
+    {
+        flex-direction: column;
+    }
+    .left-side
+    {
+        width: 100%;
+    }
+    .right-side
+    {
+        width: 100%;
+    }
+}

@@ -151,45 +151,26 @@
   {
     transform: translateX(1%);
   }
-/* 
+
   @media (min-width: 576px) 
    { 
-       .mainAbout
+       .aboutmainContainer
        {
-           width: 230%;
-           border: 2px solid black;
-           margin-left: 2em;
-       }
-       .imageContainer img
-       {
-            width: 200%;
+        justify-content: center;
        }
    }
    
-   @media (max-width: 768px) 
+   @media (min-width: 768px) 
    {
-       .Navbar{
-           min-width: 768px;
-       }
+         
    }
    
-   @media (max-width: 992px) 
+   @media (min-width: 992px) 
    {
-       .Navbar{
-           min-width: 992px;
-       }
+    .aboutmainContainer
+    {
+     flex-wrap: nowrap;
+    }
    }
    
-   @media (max-width: 1200px) {
-       .Navbar
-       {
-           min-width: 1200px;
-       }
-   }
    
-   @media (max-width: 1400px) {
-       .Navbar
-       {
-           min-width: 1400px;
-       }
-   } */

@@ -6,22 +6,7 @@ import { faFacebookF, faTwitter, faLinkedin, faYoutube } from '@fortawesome/free
 function Footer() {
   return (
     <div className="main-div">
-      <div className="leftImages">
-        <div className="leftStatic">
-          <img src="https://wordpress.onertheme.com/gratech/wp-content/themes/gratech/assets/img/footer-regular-left.png" alt="" />
-        </div>
-        <div className="leftDynamic">
-          <img src="https://wordpress.onertheme.com/gratech/wp-content/themes/gratech/assets/img/footer-solid-left.png" alt="" />
-        </div>
-      </div>
-      <div className="rightImages">
-        <div className="rightStatic">
-          <img src="https://wordpress.onertheme.com/gratech/wp-content/themes/gratech/assets/img/footer-solid-right.png" alt="" />
-        </div>
-        <div className="rightDynamic">
-          <img src="https://wordpress.onertheme.com/gratech/wp-content/themes/gratech/assets/img/footer-regular-right.png" alt="" />
-        </div>
-      </div>
+      <div className="footerImageArea">
       <div className="all-content-div">
       <div className="first-container">
         <div className="first-div">
@@ -80,7 +65,7 @@ function Footer() {
     <a href="#" className="footer-link" aria-label="Privacy Policy">Privacy Policy</a>
   </p>
 </div>
-
+</div>
     </div>
   );
 }
